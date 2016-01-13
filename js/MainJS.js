@@ -330,20 +330,6 @@
               queryTask.execute(query);
           }
 
-          //其他showResult写法示例
-          //function showResults(results) {
-          //    var resultItems = [];
-          //    var resultCount = results.features.length;
-          //    for (var i = 0; i < resultCount; i++) {
-          //        var featureAttributes = results.features[i].attributes;
-          //        for (var attr in featureAttributes) {
-          //            resultItems.push("<b>" + attr + ":</b>  " + featureAttributes[attr] + "<br>");
-          //        }
-          //        resultItems.push("<br>");
-          //    }
-          //    dom.byId("info").innerHTML = resultItems.join("");
-          //}
-          //on(dom.byId("m1"), "click", showResult(showResult,1));
           var evtResult;  //用于临时保存空间查询出来的数据，以便后续二次操作
           function showResult(evt) {
               var resultFeatures = evt.featureSet.features;
@@ -403,47 +389,46 @@
           });
           function CheckMonth() {
               var tool = null;
-              drawTable();
               switch (this.label) {
                   case "1月":
-                      showResult(evtResult,1);
+                      showResultMon(evtResult,1);
                       break;
                   case "2月":
-                      showResult(evtResult, 2);
+                      showResultMon(evtResult, 2);
                       break;
                   case "3月":
-                      showResult(evtResult, 3);
+                      showResultMon(evtResult, 3);
                       break;
                   case "4月":
-                      showResult(evtResult, 4);
+                      showResultMon(evtResult, 4);
                       break;
                   case "5月":
-                      showResult(evtResult, 5);
+                      showResultMon(evtResult, 5);
                       break;
                   case "6月":
-                      showResult(evtResult, 6);
+                      showResultMon(evtResult, 6);
                       break;
                   case "7月":
-                      showResult(evtResult, 7);
+                      showResultMon(evtResult, 7);
                       break;
                   case "8月":
-                      showResult(evtResult, 8);
+                      showResultMon(evtResult, 8);
                       break;
                   case "9月":
-                      showResult(evtResult, 9);
+                      showResultMon(evtResult, 9);
                       break;
                   case "10月":
-                      showResult(evtResult, 10);
+                      showResultMon(evtResult, 10);
                       break;
                   case "11月":
-                      showResult(evtResult, 11);
+                      showResultMon(evtResult, 11);
                       break;
                   case "12月":
-                      showResult(evtResult, 12);
+                      showResultMon(evtResult, 12);
                       break;
               }
           }
-          function showResult(evtResult, MonNum) {
+          function showResultMon(evtResult, MonNum) {
               //var resultFeatures = evt.featureSet.features;
               var resultFeatures;
               for (var i = 0, il = evtResult.length; i < il; i++) {
