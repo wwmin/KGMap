@@ -382,6 +382,7 @@
               tb.deactivate();
               //map.showZoomSlider();
           }
+
           registry.forEach(function (d) {
               if (d.declaredClass == "dijit.form.Button") {
                   d.on("click", CheckMonth);
@@ -391,9 +392,11 @@
               var tool = null;
               switch (this.label) {
                   case "1月":
+                      removeTable();
                       showResultMon(evtResult,1);
                       break;
                   case "2月":
+                      removeTable();
                       showResultMon(evtResult, 2);
                       break;
                   case "3月":
@@ -428,10 +431,12 @@
                       break;
               }
           }
-          var resultFeaturesMon = [];
+
           function showResultMon(evtResult, MonNum) {
               //var resultFeatures = evt.featureSet.features;
+              var resultFeaturesMon = [];
               var j = 0;
+              var t0=0,t1 = 0, t2 = 0, t3 = 0, t4 = 0, t5 = 0, t6 = 0, t7 = 0;
               for (var i = 0, il = evtResult.length; i < il; i++) {
                   if (evtResult[i].attributes['MONTH'][0] == String(MonNum)) {
                       //var graphic = resultFeatures[i];
@@ -441,9 +446,45 @@
                       //map.graphics.add(graphic);
                       //resultFeatures.add(evtResult[i]);
                       resultFeaturesMon[j++] = evtResult[i];
+                      switch (parseInt(evtResult[i].attributes['TYPE'][0])) {
+                          case 0:
+                              t0 += 1;
+                              break;
+                          case 1:
+                              t1 += 1;
+                              break;
+                          case 2:
+                              t2 += 1;
+                              break;
+                          case 3:
+                              t3 += 1;
+                              break;
+                          case 4:
+                              t4 += 1;
+                              break;
+                          case 5:
+                              t5 += 1;
+                              break;
+                          case 6:
+                              t6 += 1;
+                              break;
+                          case 7:
+                              t7 += 1;
+                              break;
+                          default :
+                              break;
+                      }
                   }
               }
-              //drawTable();
+              
+              document.getElementById('type0').innerHTML = "   "+t0+"个";
+              document.getElementById('type1').innerHTML = "   " + t1 + "个";
+              document.getElementById('type2').innerHTML = "   " + t2 + "个";
+              document.getElementById('type3').innerHTML = "   " + t3 + "个";
+              document.getElementById('type4').innerHTML = "   " + t4 + "个";
+              document.getElementById('type5').innerHTML = "   " + t5 + "个";
+              document.getElementById('type6').innerHTML = "   " + t6 + "个";
+              document.getElementById('type7').innerHTML = "   " + t7 + "个";
               drawTable(resultFeaturesMon);
           }
           //Set the symbol based on population
@@ -552,7 +593,7 @@
               TempLayer.clear();
               map.infoWindow.hide();
               //Reset the divs to display 0
-
+              
               dojo.byId('Span1').innerHTML = "";
               dojo.byId('Span2').innerHTML = "";
               dojo.byId('Span3').innerHTML = "";
@@ -567,6 +608,18 @@
               dojo.byId('Span12').innerHTML = "";
               dojo.byId('totalPopulation').innerHTML = "";
               dojo.byId('Other').innerHTML = "";
+              document.getElementById('type0').innerHTML = "";
+              document.getElementById('type1').innerHTML = "";
+              document.getElementById('type2').innerHTML = "";
+              document.getElementById('type3').innerHTML = "";
+              document.getElementById('type4').innerHTML = "";
+              document.getElementById('type5').innerHTML = "";
+              document.getElementById('type6').innerHTML = "";
+              document.getElementById('type7').innerHTML = "";
+              drawTable();
+          }
+          function removeTable() {
+              TempLayer.clear();
               drawTable();
           }
 
