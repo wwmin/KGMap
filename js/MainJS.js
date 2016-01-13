@@ -383,7 +383,7 @@
               //map.showZoomSlider();
           }
           registry.forEach(function (d) {
-              if (d.declaredClass == "Mon") {
+              if (d.declaredClass == "dijit.form.Button") {
                   d.on("click", CheckMonth);
               }
           });
@@ -428,21 +428,23 @@
                       break;
               }
           }
+          var resultFeaturesMon = [];
           function showResultMon(evtResult, MonNum) {
               //var resultFeatures = evt.featureSet.features;
-              var resultFeatures;
+              var j = 0;
               for (var i = 0, il = evtResult.length; i < il; i++) {
-                  if (evtResult[i].attributes == MonNum) {
-                      var graphic = resultFeatures[i];
+                  if (evtResult[i].attributes['MONTH'][0] == String(MonNum)) {
+                      //var graphic = resultFeatures[i];
                       //Assign a symbol sized based on populuation
-                      setTheSymbol(graphic);
+                      //setTheSymbol(graphic);
                       //graphic.setInfoTemplate(resultTemplate);
-                      map.graphics.add(graphic);
-                      resultFeatures.add(evt.featureSet.features[i]);
+                      //map.graphics.add(graphic);
+                      //resultFeatures.add(evtResult[i]);
+                      resultFeaturesMon[j++] = evtResult[i];
                   }
               }
-              drawTable();
-              drawTable(resultFeatures);
+              //drawTable();
+              drawTable(resultFeaturesMon);
           }
           //Set the symbol based on population
           function setTheSymbol(graphic) {
