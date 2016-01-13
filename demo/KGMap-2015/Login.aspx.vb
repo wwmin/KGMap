@@ -24,7 +24,7 @@ Partial Class Login
 
 
         If name = "szcl" And pw = "szcl" Then
-            Server.Transfer("Editor2.html")
+            Server.Transfer("Editor.html")
         Else
             ClientScript.RegisterStartupScript([GetType], "", "<script>alert('用户名或密码错误！请重新输入！');</script>")
         End If

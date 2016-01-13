@@ -3,39 +3,37 @@
 <head>
     <meta charset="utf-8">
     <title>空港测量数据编辑</title>
-    <link rel="stylesheet" href="http://60.29.110.104/arcgis_js_api/library/3.9/3.9/js/dojo/dijit/themes/claro/claro.css">
-    <link rel="stylesheet" href="http://60.29.110.104/arcgis_js_api/library/3.9/3.9/js/esri/css/esri.css" />
-    <link rel="stylesheet" href="Main.css" />
-    <script src="http://60.29.110.104/arcgis_js_api/library/3.9/3.9/init.js"></script>
-    <script src="Editor.js"></script>
-
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.9/3.9/js/dojo/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.9/3.9/js/dojo/dojox/grid/resources/claroGrid.css">
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.9/3.9/js/dojo/dojox/grid/resources/Grid.css">
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.9/3.9/js/esri/css/esri.css" />
+    <link rel="stylesheet" href="css/Main.css"/>
+    <script src="http://localhost/arcgis_js_api/library/3.9/3.9/init.js"></script>
+    <script type="text/javascript" src="js/Editor.js"></script>
 </head>
-<body class="claro">    
-    <div id="mainWindow" data-dojo-type="dijit/layout/BorderContainer" 
-        data-dojo-props="design:'headline',gutters:false">
-        <div id="map" data-dojo-type="dijit/layout/ContentPane" 
-            data-dojo-props="region:'center'">
-            <div style="position:absolute; right:20px; top:10px; z-Index:99;">
-                <div id="titlePane" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'测量', closable:'false', open:'true'">
-                    <div id="measurementDiv"></div>
-                    <span style="font-size:smaller;padding:5px 5px;">按住<b>CTRL</b> 捕捉.</span>
-                </div>
-            </div>
-<!--            <div style="position:absolute; right:20px; top:210px; z-Index:100;">
-                <div id="titlePane2" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'打印', closable:'true', open:'false',toggleable:'false'">
-                    <div id="printButton"></div>
-                    <span style="font-size:smaller;padding:5px 5px;"> 点击<b>打印</b>后稍等<br/>然后点击打印输出</span>
-                </div>
-            </div>-->
-        </div>
-        <div id="leftPane" data-dojo-type="dijit/layout/ContentPane" 
-            data-dojo-props="region:'left'">
-            <div><strong>&nbsp &nbsp &nbsp 空港小物流计量</strong></div>
-            <div id="editorDiv"></div>
-            <!--<div id="printButton"></div>-->
-        </div>
-        <div id="HomeButton"></div>
-        <div id="LocateButton"></div>
+<body class="claro">
+<div id="buttonbox">
+        <button data-dojo-type="dijit/form/Button">多边形</button>
+        <button data-dojo-type="dijit/form/Button">徒手多边形</button>
+        <button data-dojo-type="dijit/form/Button">删除选择结果</button>
+    </div>
+    
+    <div id="box">
+        <div>多边形内的街区数为：<span id="numberOfBlocks">0</span></div>
+        <div>多边形内的人口数为：<span id="totalPopulation">0</span></div>
+    </div>    
+
+    <div id="mapbox">
+        <div id="map" style="width:700px; height:512px; border:2px solid #000;" class="tundra"></div>
+    </div>
+    
+    <div id="grid" data-dojo-type="dojox/grid/DataGrid" data-dojo-id="gridWidget"></div>
+
+    <div id="legend">
+        <b>人口：  </b>
+        <img src="images/CircleBlue16.png" /> 50
+        <img src="images/CircleBlue24.png" /> 100
+        <img src="images/CircleRed32.png" /> 大于100
     </div>
 </body>
 </html>
