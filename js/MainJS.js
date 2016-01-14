@@ -268,11 +268,11 @@
           }
           function setGridHeader() {
               var layout = [
-                  { field: 'OBJECTID', name: '标识ID', width: "50px", headerStyles: "text-align:center;" },
-                  { field: 'TYPE', name: '类型', width: "27px", headerStyles: "text-align:center;" },
-                  { field: 'CID', name: '编码', width: "27px", headerStyles: "text-align:center;" },
-                  { field: 'NUM', name: '数量', width: "27px", headerStyles: "text-align:center;" },
-                  { field: 'MONTH', name: '月份', width: "27px", headerStyles: "text-align:center;" }
+                  //{ field: 'OBJECTID', name: '标识ID', width: "50px", headerStyles: "text-align:center;" },
+                  { field: 'TYPE', name: '类型', width: "48px", headerStyles: "text-align:center;" },
+                  { field: 'CID', name: '编码', width: "48px", headerStyles: "text-align:center;" },
+                  { field: 'NUM', name: '数量', width: "48px", headerStyles: "text-align:center;" },
+                  { field: 'MONTH', name: '月份', width: "48px", headerStyles: "text-align:center;" }
               ];
               gridWidget.setStructure(layout);
           }

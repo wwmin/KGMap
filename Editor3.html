@@ -48,10 +48,10 @@
             </div>
         </div>
         <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'right', splitter:'true'"
-            style="background-color: #acb386; width: 250px;">
+            style="background-color: #acb386; width: 280px;">
             <div id="accordionContainer" data-dojo-type="dijit/layout/AccordionContainer"
                 style="padding: 0px; overflow: hidden; z-index: 29;">
-                <div data-dojo-type="dijit/layout/ContentPane" title="查询" style="overflow: hidden;">
+                <div data-dojo-type="dijit/layout/ContentPane" title="查询" style="overflow: scroll; overflow-x:hidden;overflow-y:auto">
                     <div id="findServicesDiv" style="width:auto;">
                         <div id="buttonbox">
                             <button data-dojo-type="dijit/form/Button" id="btnAll" title="查找全区(空港、小物流、海港)范围内的所有数据">全区范围</button>
@@ -60,7 +60,7 @@
                         </div>
                         <div id="box">
                             <div class="numSum">总数为：<span id="totalPopulation"></span>,其中月份有误个数：<span id="Other"></span></div>
-                            <table class="tblist">
+<!--                            <table class="tblist">
                                 <tr>
                                     <th><button class="mon"  data-dojo-type="dijit/form/Button">1月</button></th>
                                     <th><button class="mon"  data-dojo-type="dijit/form/Button">2月</button></th>
@@ -89,20 +89,54 @@
                                     <td><span id="Span11"></span></td>
                                     <td><span id="Span12"></span></td>
                                 </tr>
+                            </table>-->
+                            <table class="tblist">
+                                <tr>
+                                    <th><button data-dojo-type="dijit/form/Button">1月</button></th>
+                                    <th><button data-dojo-type="dijit/form/Button">2月</button></th>
+                                    <th><button  data-dojo-type="dijit/form/Button">3月</button></th>
+                                    <th><button  data-dojo-type="dijit/form/Button">4月</button></th>
+                                    <th><button  data-dojo-type="dijit/form/Button">5月</button></th>
+                                    <th><button  data-dojo-type="dijit/form/Button">6月</button></th>
+                                </tr>
+                                <tr>
+                                    <td><span id="Span1"></span></td>
+                                    <td><span id="Span2"></span></td>
+                                    <td><span id="Span3"></span></td>
+                                    <td><span id="Span4"></span></td>
+                                    <td><span id="Span5"></span></td>
+                                    <td><span id="Span6"></span></td>
+                                </tr>
+                                <tr>
+                                    <th><button  data-dojo-type="dijit/form/Button">7月</button></th>
+                                    <th><button  data-dojo-type="dijit/form/Button">8月</button></th>
+                                    <th><button data-dojo-type="dijit/form/Button">9月</button></th>
+                                    <th><button  data-dojo-type="dijit/form/Button">10月</button></th>
+                                    <th><button  data-dojo-type="dijit/form/Button">11月</button></th>
+                                    <th><button  data-dojo-type="dijit/form/Button">12月</button></th>
+                                </tr>
+                                <tr>
+                                    <td><span id="Span7"></span></td>
+                                    <td><span id="Span8"></span></td>
+                                    <td><span id="Span9"></span></td>
+                                    <td><span id="Span10"></span></td>
+                                    <td><span id="Span11"></span></td>
+                                    <td><span id="Span12"></span></td>
+                                </tr>
                             </table>
                         </div>
                         <div id="grid" data-dojo-type="dojox/grid/DataGrid" data-dojo-id="gridWidget"></div>
                         <div class="Dislist">
                             <span>类型列表</span>
                             <ul>
-                                <li>0-侧石</li>
-                                <li>1-车行道</li>
-                                <li>2-车行道挖掘修复</li>
-                                <li>3-检查井</li>
-                                <li>4-桥梁检查维修</li>
-                                <li>5-人行道</li>
-                                <li>6-人行道挖掘修复</li>
-                                <li>7-收水井</li>
+                                <li>0-侧石<span id="type0">&nbsp;</span></li>
+                                <li>1-车行道<span id="type1">&nbsp;</span></li>
+                                <li>2-车行道挖掘修复<span id="type2">&nbsp;</span></li>
+                                <li>3-检查井<span id="type3">&nbsp;</span></li>
+                                <li>4-桥梁检查维修<span id="type4">&nbsp;</span></li>
+                                <li>5-人行道<span id="type5">&nbsp;</span></li>
+                                <li>6-人行道挖掘修复<span id="type6">&nbsp;</span></li>
+                                <li>7-收水井<span id="type7">&nbsp;</span></li>
                             </ul>
                         </div>
                     </div>

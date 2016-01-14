@@ -18,6 +18,7 @@ html, body, #mainWindow
     font-family: '微软雅黑';
     overflow: hidden;
 }
+#buttonbox{ font-size:13px; margin-top:-7px;}
 
 .Dislist
 {
@@ -26,14 +27,16 @@ html, body, #mainWindow
     padding:0;
     position:relative;
     top:10px;
+	font-size:13px;
 }
 .Dislist ul,.Dislist ul li
     {
         list-style-type:none;
+		margin-top:3px;
     }
 .Dislist ul li
 {
-	line-height:24px;
+	line-height:16px;
 	list-style-image: url(../images/eg_arrow.gif);
 }
 
@@ -52,10 +55,11 @@ html, body, #mainWindow
 
 #grid
 { /*This div positions the results table */
-    border: 1px solid #333;
-    width: 240px;
-    height:300px;
+    border: 1px solid #A3C0E8;
+    width: 268px;
+    height:500px;
     background-color: Transparent;
+	font-size:14px;
     /*position: absolute;*/
     /*left: 5px;
     top: 165px;*/
@@ -82,14 +86,6 @@ html, body, #mainWindow
     height: 720px;
 }
 
-#buttonbox
-{ /*This div positions the buttons */
-    /*position: absolute;*/
-    /*position:inherit;
-    left: 10px;
-    top: 30px;*/
-}
-
 #box
 { /*This div positions the results box */
     /*border: 1px solid #333;*/
@@ -98,6 +94,7 @@ html, body, #mainWindow
     /*position: absolute;*/
     /*left: 5px;
     top: 80px;*/
+	margin-bottom:2px;
 }
 
 #mapbox
@@ -133,8 +130,9 @@ html, body, #mainWindow
 .numSum
 {
     font-family:"宋体",Arial, Helvetica, sans-serif;
-    border:1px solid #808080;
-    font-size:15px;
+    font-size:14px;
+	color:#FF0000;
+	line-height:24px;
 }
 
 
@@ -175,6 +173,7 @@ html, body, #mainWindow
 	padding:1px;
 	border:1px solid #A3C0E8;
 }
+
 #type0, #type1, #type2, #type3, #type4, #type5, #type6, #type7
 {
     font:bold 14px arial verdana;
