@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcdedc43-957f-44ac-8b59-4d5eb875f2c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ABCmarker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.8.3.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/MainJS.js" afterPath="$PROJECT_DIR$/js/MainJS.js" />
     </list>
     <ignored path="KGMap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,24 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ABCmarker.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ABCmarker.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.21118012">
-              <caret line="184" column="27" selection-start-line="184" selection-start-column="27" selection-end-line="184" selection-end-column="27" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainJS.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/MainJS.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="301" column="52" selection-start-line="301" selection-start-column="25" selection-end-line="301" selection-end-column="52" />
+              <caret line="118" column="42" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
               <folding>
                 <element signature="e#2096#2132#0" expanded="false" />
                 <element signature="e#2230#2266#0" expanded="false" />
@@ -59,9 +43,21 @@
                 <element signature="e#5280#5351#0" expanded="false" />
                 <element signature="e#5382#5429#0" expanded="false" />
                 <element signature="e#5526#5710#0" expanded="false" />
-                <element signature="e#5784#5803#0" expanded="false" />
-                <element signature="e#5901#6101#0" expanded="false" />
-                <element signature="e#6202#9667#0" expanded="false" />
+                <element signature="e#6251#6270#0" expanded="false" />
+                <element signature="e#6368#6568#0" expanded="false" />
+                <element signature="e#6669#10134#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeadlineContainer.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HeadlineContainer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4347826">
+              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,9 +98,9 @@
         <option value="$PROJECT_DIR$/demo/KGMap-2015/Editor.js" />
         <option value="$PROJECT_DIR$/HeadlineContainer.html" />
         <option value="$PROJECT_DIR$/css/Main.css" />
-        <option value="$PROJECT_DIR$/js/MainJS.js" />
         <option value="$PROJECT_DIR$/demo/ABCmarker.html" />
         <option value="$PROJECT_DIR$/ABCmarker.html" />
+        <option value="$PROJECT_DIR$/js/MainJS.js" />
       </list>
     </option>
   </component>
@@ -144,7 +140,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,6 +202,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -595,7 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029797377">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,13 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HeadlineContainer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.764706">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/chartlayer/说明.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.2908225">
@@ -652,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2514899">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.24844721">
           <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,10 +665,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ABCmarker.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.088236">
+          <caret line="147" column="64" selection-start-line="147" selection-start-column="64" selection-end-line="147" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/MainJS.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="301" column="52" selection-start-line="301" selection-start-column="25" selection-end-line="301" selection-end-column="52" />
+          <caret line="118" column="42" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
           <folding>
             <element signature="e#2096#2132#0" expanded="false" />
             <element signature="e#2230#2266#0" expanded="false" />
@@ -698,20 +694,19 @@
             <element signature="e#5280#5351#0" expanded="false" />
             <element signature="e#5382#5429#0" expanded="false" />
             <element signature="e#5526#5710#0" expanded="false" />
-            <element signature="e#5784#5803#0" expanded="false" />
-            <element signature="e#5901#6101#0" expanded="false" />
-            <element signature="e#6202#9667#0" expanded="false" />
+            <element signature="e#6251#6270#0" expanded="false" />
+            <element signature="e#6368#6568#0" expanded="false" />
+            <element signature="e#6669#10134#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ABCmarker.html">
+    <entry file="file://$PROJECT_DIR$/HeadlineContainer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.21118012">
-          <caret line="184" column="27" selection-start-line="184" selection-start-column="27" selection-end-line="184" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.4347826">
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
           <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

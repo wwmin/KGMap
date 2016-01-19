@@ -105,6 +105,20 @@
               defaultLengthUnit: Units.METERS
           }, dom.byId("measurementDiv"));
           measurement.startup();
+
+          measurement.areaToggleButton = function () {
+              this.clearResult();
+              this.setTool("area");
+              if ( areaToggled ){
+                  clickHandler =    dojo.connect(map, "onClick", executeIdentifyTask);
+                  areaToggled = false;
+
+              }else{
+                  dojo.disconnect(clickHandler);
+                  areaToggled = true;
+                  distanceToggled = false;
+              }
+          };
           //MeasureWidget End
           // close the info window when esc is pressed
           map.on("key-down", function (e) {
