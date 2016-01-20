@@ -9,6 +9,7 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <!--<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />-->
     <!--<link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />-->
+    <script src="js/jquery-1.8.3.min.js"></script>
     <style type="text/css">
         html {
             background: url("http://area.sinaapp.com/bingImg?daysAgo=3") no-repeat center center fixed;
@@ -38,7 +39,7 @@
             margin: 40px 0;
         }
     </style>
-  
+
    
 </head>
 <body>
@@ -62,6 +63,7 @@
                 </p>
 
             </form>
+
         </div>
     </div>
 </div>
