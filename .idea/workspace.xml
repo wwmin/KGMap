@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcdedc43-957f-44ac-8b59-4d5eb875f2c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Editor3.html" afterPath="$PROJECT_DIR$/Editor3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/MainJS.js" afterPath="$PROJECT_DIR$/js/MainJS.js" />
-    </list>
+    <list default="true" id="dcdedc43-957f-44ac-8b59-4d5eb875f2c5" name="Default" comment="" />
     <ignored path="KGMap.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +44,8 @@
       <file leaf-file-name="Editor3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Editor3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="58" column="119" selection-start-line="58" selection-start-column="119" selection-end-line="58" selection-end-column="119" />
+            <state relative-caret-position="602">
+              <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -280,12 +277,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1449674736639</updated>
-      <workItem from="1462851456810" duration="7196000" />
+      <workItem from="1462851456810" duration="7935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7196000" />
+    <option name="totallyTimeSpent" value="7935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -709,8 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Editor3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="58" column="119" selection-start-line="58" selection-start-column="119" selection-end-line="58" selection-end-column="119" />
+        <state relative-caret-position="602">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
           <folding />
         </state>
       </provider>
