@@ -56,7 +56,7 @@
 
           map.on("layers-add-result", initEditor);
 
-          var baseUrl = "http://60.29.110.104:6080/arcgis/rest/services/FeatureMap20151208/FeatureServer/"; //此图层只有0层
+          var baseUrl = "http://60.29.110.104:6080/arcgis/rest/services/FeatureMap20151208/FeatureServer/"; //此图层只有层  ?
           var pointsOfInterest = new FeatureLayer(baseUrl + "0", {
               mode: FeatureLayer.MODE_ONDEMAND,
               outFields: ['*']
@@ -85,7 +85,7 @@
           var parcelsLayer = new FeatureLayer("http://60.29.110.104:6080/arcgis/rest/services/FeatureMap20151208/FeatureServer/0", {
               mode: FeatureLayer.MODE_ONDEMAND,
               outFields: ["*"]
-          });
+          });  //空港点数据
           parcelsLayer.setRenderer(new SimpleRenderer(sfs));
           map.addLayers([parcelsLayer]);
           //dojo.keys.copyKey maps to CTRL on windows and Cmd on Mac., but has wrong code for Chrome on Mac
@@ -252,8 +252,10 @@
           var pntSym3 = new PictureMarkerSymbol("images/CircleRed32.png", 25, 25);
 
           // 初始化查询任务与查询参数
-          var queryTask = new QueryTask("http://60.29.110.104:6080/arcgis/rest/services/FeatureMap20151208/FeatureServer/0");
+          var queryTask = new QueryTask("http://60.29.110.104:6080/arcgis/rest/services/FeatureMap20151208/FeatureServer/0"); //空港范围
+          var queryTask2 = new QueryTask("http://60.29.110.104:6080/arcgis/rest/services/FeatureMap20151208/FeatureServer/0"); //小物流范围
           queryTask.on("complete", showResult);
+          queryTask2.on("complete", showResult2);
           var query = new QueryT();
           query.returnGeometry = true;
           query.outFields = ["OBJECTID", "TYPE", "CID", "NUM", "MONTH"];

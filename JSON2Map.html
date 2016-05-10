@@ -259,6 +259,7 @@
                             var tdColor = $("<td />").appendTo(trItem).append(legendColor);
                             var tdText = $("<td />").appendTo(trItem).append(legendText);
 
+                            //向地图添加点线，并显示出来
                             var stops = subLines[i].p;
                             var line = new Array();
                             for(var j= 0,sl =stops.length;j<sl;j++){
