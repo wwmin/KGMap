@@ -252,10 +252,11 @@
           var pntSym3 = new PictureMarkerSymbol("images/CircleRed32.png", 25, 25);
 
           // 初始化查询任务与查询参数
-          var queryTask = new QueryTask("http://60.29.110.104:6080/arcgis/rest/services/FeatureMap20151208/FeatureServer/0"); //空港范围
-          var queryTask2 = new QueryTask("http://60.29.110.104:6080/arcgis/rest/services/FeatureMap20151208/FeatureServer/0"); //小物流范围
-          queryTask.on("complete", showResult);
-          queryTask2.on("complete", showResult2);
+          var FeatureServerUrl="http://60.29.110.104:6080/arcgis/rest/services/FeatureMap20151208/FeatureServer/";
+          // var queryTask = new QueryTask(FeatureServerUrl+"0"); //空港范围
+          // var queryTask=new QueryTask(FeatureServerUrl+"0");
+          // queryTask.on("complete", showResult);
+          var queryTask;
           var query = new QueryT();
           query.returnGeometry = true;
           query.outFields = ["OBJECTID", "TYPE", "CID", "NUM", "MONTH"];
@@ -266,20 +267,29 @@
                   remove();
               } else {
                   switch (this.label) {
-                      case "全区范围":
+                      case "空港范围":
                           remove();
                           //tool = "POLYGON";
+                          queryTask=new QueryTask(FeatureServerUrl+"0");
+                          queryTask.on("complete", showResult);
                           addGraphicALL();
                           break;
                       case "徒手":
                           remove();
                           tool = "FREEHAND_POLYGON";
                           break;
+                      case "物流范围":
+                          remove();
+                          queryTask=new QueryTask(FeatureServerUrl+"1");
+                          queryTask.on("complete", showResult);
+                          addGraphicALL();
+                          break;
                   }
                   tb.activate(Draw[tool]);
                   //map.hideZoomSlider();
               }
           }
+
           function setGridHeader() {
               var layout = [
                   //{ field: 'OBJECTID', name: '标识ID', width: "50px", headerStyles: "text-align:center;" },
@@ -331,6 +341,7 @@
               query.geometry = handgraphic.geometry;
               queryTask.execute(query);
           }
+
           //Set drawing properties and add polygon to map
           function addGraphic(geometry) {
               var handgraphic = new Graphic(geometry, symbol);
